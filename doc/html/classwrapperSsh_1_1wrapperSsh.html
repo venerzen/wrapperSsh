@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3"/>
+<title>SshToolkit: Référence de la classe wrapperSsh::wrapperSsh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SshToolkit
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classwrapperSsh_1_1wrapperSsh.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="classwrapperSsh_1_1wrapperSsh-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe wrapperSsh::wrapperSsh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contrôleur de connexion.  
+ <a href="classwrapperSsh_1_1wrapperSsh.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a140922c3de99d8557b40ba8765382163"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a140922c3de99d8557b40ba8765382163">wrapperSsh</a> ()</td></tr>
+<tr class="memdesc:a140922c3de99d8557b40ba8765382163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut.  <a href="#a140922c3de99d8557b40ba8765382163"></a><br/></td></tr>
+<tr class="separator:a140922c3de99d8557b40ba8765382163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ece3a28f6e2cd6598c0c3c5385482db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a6ece3a28f6e2cd6598c0c3c5385482db">wrapperSsh</a> (const std::string &amp;<a class="el" href="classwrapperSsh_1_1wrapperSsh.html#af32ad09c3b1f64891098ecbb301231fb">host</a>)</td></tr>
+<tr class="memdesc:a6ece3a28f6e2cd6598c0c3c5385482db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#a6ece3a28f6e2cd6598c0c3c5385482db"></a><br/></td></tr>
+<tr class="separator:a6ece3a28f6e2cd6598c0c3c5385482db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902e15767cbbbb3f51c4a1bd5534f1c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a902e15767cbbbb3f51c4a1bd5534f1c7">wrapperSsh</a> (const <a class="el" href="classwrapperSsh_1_1wrapperSsh.html">wrapperSsh</a> &amp;w)</td></tr>
+<tr class="memdesc:a902e15767cbbbb3f51c4a1bd5534f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de copie par défaut.  <a href="#a902e15767cbbbb3f51c4a1bd5534f1c7"></a><br/></td></tr>
+<tr class="separator:a902e15767cbbbb3f51c4a1bd5534f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a05a589f16e3e1606a76789cc8dd30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a84a05a589f16e3e1606a76789cc8dd30">~wrapperSsh</a> ()</td></tr>
+<tr class="memdesc:a84a05a589f16e3e1606a76789cc8dd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur par défaut.  <a href="#a84a05a589f16e3e1606a76789cc8dd30"></a><br/></td></tr>
+<tr class="separator:a84a05a589f16e3e1606a76789cc8dd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025e1557c0cb6fdc3e7fb99d970988a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a025e1557c0cb6fdc3e7fb99d970988a0">setHost</a> (const std::string &amp;<a class="el" href="classwrapperSsh_1_1wrapperSsh.html#af32ad09c3b1f64891098ecbb301231fb">host</a>)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:a025e1557c0cb6fdc3e7fb99d970988a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode d'affectation d'un hôte.  <a href="#a025e1557c0cb6fdc3e7fb99d970988a0"></a><br/></td></tr>
+<tr class="separator:a025e1557c0cb6fdc3e7fb99d970988a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ea0f4ac12fcbeee51a016713dee2f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ac0ea0f4ac12fcbeee51a016713dee2f7">sshInit</a> (const std::string &amp;user, const std::string &amp;password)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:ac0ea0f4ac12fcbeee51a016713dee2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode d'initialisation de la connexion ssh.  <a href="#ac0ea0f4ac12fcbeee51a016713dee2f7"></a><br/></td></tr>
+<tr class="separator:ac0ea0f4ac12fcbeee51a016713dee2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a50273d95fe26d70c6d1d60337214ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a8a50273d95fe26d70c6d1d60337214ec">sshStop</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:a8a50273d95fe26d70c6d1d60337214ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode de clôture d'une session ssh.  <a href="#a8a50273d95fe26d70c6d1d60337214ec"></a><br/></td></tr>
+<tr class="separator:a8a50273d95fe26d70c6d1d60337214ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5c72e00dc6d8bf97af5294d01b2ae1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structwrapperSsh_1_1sshExecResult.html">sshExecResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#abb5c72e00dc6d8bf97af5294d01b2ae1">sshExec</a> (const std::string &amp;command)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:abb5c72e00dc6d8bf97af5294d01b2ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant d'exécuter une commande sur un serveur distant.  <a href="#abb5c72e00dc6d8bf97af5294d01b2ae1"></a><br/></td></tr>
+<tr class="separator:abb5c72e00dc6d8bf97af5294d01b2ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add560fa13e3857325e400d35a99f133d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#add560fa13e3857325e400d35a99f133d">scpGet</a> (const std::string &amp;fileSrc, const std::string &amp;fileDest)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:add560fa13e3857325e400d35a99f133d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant récupérer un fichier sur une machine distante via scp.  <a href="#add560fa13e3857325e400d35a99f133d"></a><br/></td></tr>
+<tr class="separator:add560fa13e3857325e400d35a99f133d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0435e2b17d0970cadb989ea0b468cad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a0435e2b17d0970cadb989ea0b468cad8">scpPut</a> (const std::string &amp;fileSrc, const std::string &amp;fileDest)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:a0435e2b17d0970cadb989ea0b468cad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant déposer un fichier sur une machine distante via scp.  <a href="#a0435e2b17d0970cadb989ea0b468cad8"></a><br/></td></tr>
+<tr class="separator:a0435e2b17d0970cadb989ea0b468cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee930b11ab4f533d1805730be64bfec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#aee930b11ab4f533d1805730be64bfec5">sshRequestShell</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:aee930b11ab4f533d1805730be64bfec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant de demander un « shell »  <a href="#aee930b11ab4f533d1805730be64bfec5"></a><br/></td></tr>
+<tr class="separator:aee930b11ab4f533d1805730be64bfec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749f90df598df3b6073f69ab2b489f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a749f90df598df3b6073f69ab2b489f49">sshRequestChannelExecMode</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:a749f90df598df3b6073f69ab2b489f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant de paramètrer le channel pour l'exécution de commandes.  <a href="#a749f90df598df3b6073f69ab2b489f49"></a><br/></td></tr>
+<tr class="separator:a749f90df598df3b6073f69ab2b489f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256d280c08aa210bd205267ff3d4841d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a256d280c08aa210bd205267ff3d4841d">getIp</a> (const std::string &amp;<a class="el" href="classwrapperSsh_1_1wrapperSsh.html#af32ad09c3b1f64891098ecbb301231fb">host</a>)  throw (wrapperSshException)</td></tr>
+<tr class="memdesc:a256d280c08aa210bd205267ff3d4841d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode permettant de résoudre un nom dns.  <a href="#a256d280c08aa210bd205267ff3d4841d"></a><br/></td></tr>
+<tr class="separator:a256d280c08aa210bd205267ff3d4841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:af32ad09c3b1f64891098ecbb301231fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#af32ad09c3b1f64891098ecbb301231fb">host</a></td></tr>
+<tr class="separator:af32ad09c3b1f64891098ecbb301231fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad849d39b9bae2f3889a6d85ba7df70e3"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ad849d39b9bae2f3889a6d85ba7df70e3">hostAddr</a></td></tr>
+<tr class="separator:ad849d39b9bae2f3889a6d85ba7df70e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3857c3e91235bb0ae49afef1d240ebb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a3857c3e91235bb0ae49afef1d240ebb9">sock</a></td></tr>
+<tr class="separator:a3857c3e91235bb0ae49afef1d240ebb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355b299ef90281215ec988f81492a645"><td class="memItemLeft" align="right" valign="top">struct sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a355b299ef90281215ec988f81492a645">sin</a></td></tr>
+<tr class="separator:a355b299ef90281215ec988f81492a645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a19e47dac18658f6aebda1cf87eb697"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a8a19e47dac18658f6aebda1cf87eb697">fingerPrint</a></td></tr>
+<tr class="separator:a8a19e47dac18658f6aebda1cf87eb697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6f1c93c16e7b79510b64b962f25aae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a7a6f1c93c16e7b79510b64b962f25aae">returnCode</a></td></tr>
+<tr class="separator:a7a6f1c93c16e7b79510b64b962f25aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bccdf7ba714f56f4c0ffff126e0405e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a2bccdf7ba714f56f4c0ffff126e0405e">exitCode</a></td></tr>
+<tr class="separator:a2bccdf7ba714f56f4c0ffff126e0405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab701724987331d4954c3dcfa58ec0e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a5ab701724987331d4954c3dcfa58ec0e">exitSignal</a></td></tr>
+<tr class="separator:a5ab701724987331d4954c3dcfa58ec0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab108ac73fbac5826251a79f058532a2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ab108ac73fbac5826251a79f058532a2b">byteCount</a></td></tr>
+<tr class="separator:ab108ac73fbac5826251a79f058532a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b10bfd4f4ac8656deaa8544931ec8d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a83b10bfd4f4ac8656deaa8544931ec8d">len</a></td></tr>
+<tr class="separator:a83b10bfd4f4ac8656deaa8544931ec8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59436526bdf75d81c638a4624a9ce14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ac59436526bdf75d81c638a4624a9ce14">type</a></td></tr>
+<tr class="separator:ac59436526bdf75d81c638a4624a9ce14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb30eae461cdaff310bb254a25a61c6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a9eb30eae461cdaff310bb254a25a61c6">userAuthList</a></td></tr>
+<tr class="separator:a9eb30eae461cdaff310bb254a25a61c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea87cfa58cd5fca826c509dcfad88765"><td class="memItemLeft" align="right" valign="top">LIBSSH2_KNOWNHOSTS *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#aea87cfa58cd5fca826c509dcfad88765">nh</a></td></tr>
+<tr class="separator:aea87cfa58cd5fca826c509dcfad88765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf84f52ea2aec650279c9df5873c812d"><td class="memItemLeft" align="right" valign="top">LIBSSH2_SESSION *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#aaf84f52ea2aec650279c9df5873c812d">session</a></td></tr>
+<tr class="separator:aaf84f52ea2aec650279c9df5873c812d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c18038274554b389a8c8db5aa9259f9"><td class="memItemLeft" align="right" valign="top">LIBSSH2_CHANNEL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a5c18038274554b389a8c8db5aa9259f9">channel</a></td></tr>
+<tr class="separator:a5c18038274554b389a8c8db5aa9259f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:af797e68d69bfab33aaa9d65246aac09f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#af797e68d69bfab33aaa9d65246aac09f">sshConnect</a> (const std::string &amp;user, const std::string &amp;password)  throw (wrapperSshException)</td></tr>
+<tr class="separator:af797e68d69bfab33aaa9d65246aac09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb597aea6b8646896844a3358a039f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#acb597aea6b8646896844a3358a039f07">sshDisconnect</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="separator:acb597aea6b8646896844a3358a039f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b4e3b9e8511955158a6eab4578c85d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a30b4e3b9e8511955158a6eab4578c85d">portConnect</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="separator:a30b4e3b9e8511955158a6eab4578c85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47e7420c5e2032147ef4ee5a7f2e29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ad47e7420c5e2032147ef4ee5a7f2e29d">portDisConnect</a> ()  throw (wrapperSshException)</td></tr>
+<tr class="separator:ad47e7420c5e2032147ef4ee5a7f2e29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9ae559e3f2ca67e1996f0ee8d898b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#a9a9ae559e3f2ca67e1996f0ee8d898b7">setUserAuthList</a> (const std::string &amp;user)  throw (wrapperSshException)</td></tr>
+<tr class="separator:a9a9ae559e3f2ca67e1996f0ee8d898b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ddca7d0030d78cdf88de932a817ece"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html#ad9ddca7d0030d78cdf88de932a817ece">waitsocket</a> (int socket_fd, LIBSSH2_SESSION *<a class="el" href="classwrapperSsh_1_1wrapperSsh.html#aaf84f52ea2aec650279c9df5873c812d">session</a>)</td></tr>
+<tr class="separator:ad9ddca7d0030d78cdf88de932a817ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Contrôleur de connexion. </p>
+<p>Cette classe est un wrapper de la libssh2. Elle comporte un ensemble de méthodes permettant de manipuler plus simplement cette dernière. </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00064">64</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a140922c3de99d8557b40ba8765382163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wrapperSsh::wrapperSsh::wrapperSsh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur par défaut. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Constructeur par défaut appelé à chaque création d'une instance de ce contrôleur. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ece3a28f6e2cd6598c0c3c5385482db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wrapperSsh::wrapperSsh::wrapperSsh </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std::string <b>host</b> : nom dns ou ip de l'hôte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Constructeur avec le nom dns ou l'ip de l'hôte en plus. </p>
+
+</div>
+</div>
+<a class="anchor" id="a902e15767cbbbb3f51c4a1bd5534f1c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wrapperSsh::wrapperSsh::wrapperSsh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwrapperSsh_1_1wrapperSsh.html">wrapperSsh</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de copie par défaut. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td><a class="el" href="classwrapperSsh_1_1wrapperSsh.html" title="Contrôleur de connexion.">wrapperSsh</a>&amp; <b>host</b> : <a class="el" href="classwrapperSsh_1_1wrapperSsh.html" title="Contrôleur de connexion.">wrapperSsh</a> dont on va faire la copie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Constructeur par de copie par défaut. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84a05a589f16e3e1606a76789cc8dd30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wrapperSsh::wrapperSsh::~wrapperSsh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur par défaut. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Destructeur par défaut. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a256d280c08aa210bd205267ff3d4841d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrapperSsh::wrapperSsh::getIp </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode permettant de résoudre un nom dns. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coost</td><td>std::string&amp; <b>host</b> : nom de l'hôte</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette méthode permet de résoudre un nom dns et donc d'en récupérer l'ip (v4 ou v6). </p>
+
+</div>
+</div>
+<a class="anchor" id="a30b4e3b9e8511955158a6eab4578c85d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::portConnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad47e7420c5e2032147ef4ee5a7f2e29d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::portDisConnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add560fa13e3857325e400d35a99f133d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::scpGet </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileDest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode permettant récupérer un fichier sur une machine distante via scp. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>fileSrc</b> : chemin vers le fichier à récupérer. </td></tr>
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>fileDst</b> : chemin local où le fichier doit être enregistré. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet de récupérer un fichier via scp. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0435e2b17d0970cadb989ea0b468cad8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::scpPut </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileDest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode permettant déposer un fichier sur une machine distante via scp. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>fileSrc</b> : chemin local vers le fichier à récupérer. </td></tr>
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>fileDst</b> : chemin où le fichier doit être enregistré. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet de déposer un fichier via scp. </p>
+
+</div>
+</div>
+<a class="anchor" id="a025e1557c0cb6fdc3e7fb99d970988a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::setHost </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode d'affectation d'un hôte. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>host</b> : nom/ip de l'hôte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet d'affecter un nouvel hôte à l'objet. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9ae559e3f2ca67e1996f0ee8d898b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::setUserAuthList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af797e68d69bfab33aaa9d65246aac09f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshConnect </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb597aea6b8646896844a3358a039f07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshDisconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb5c72e00dc6d8bf97af5294d01b2ae1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structwrapperSsh_1_1sshExecResult.html">sshExecResult</a> wrapperSsh::wrapperSsh::sshExec </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode permettant d'exécuter une commande sur un serveur distant. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>command</b> : commande à exécuter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="structwrapperSsh_1_1sshExecResult.html">wrapperSsh::sshExecResult</a> : structure contenant les erreurs ainsi que le résultat renvoyé par la sortie standard.</dd></dl>
+<p>Cette méthode permet d'exécuter une commande et retourne le résultat dans une sturcture de type <a class="el" href="structwrapperSsh_1_1sshExecResult.html">wrapperSsh::sshExecResult</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0ea0f4ac12fcbeee51a016713dee2f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshInit </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode d'initialisation de la connexion ssh. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>user</b> : login de l'utilisateur </td></tr>
+    <tr><td class="paramname">const</td><td>std:string&amp; <b>password</b> : mot de passe de l'utilisateur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet d'initialiser la connexion ssh à l'hôte via le couple login/passwd. </p>
+
+</div>
+</div>
+<a class="anchor" id="a749f90df598df3b6073f69ab2b489f49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshRequestChannelExecMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode permettant de paramètrer le channel pour l'exécution de commandes. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet de paramètrer le channel pour l'exécution de commandes. </p>
+
+</div>
+</div>
+<a class="anchor" id="aee930b11ab4f533d1805730be64bfec5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshRequestShell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode permettant de demander un « shell » </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet d'obtenir un shell. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a50273d95fe26d70c6d1d60337214ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrapperSsh::wrapperSsh::sshStop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw (<a class="el" href="classwrapperSshException.html">wrapperSshException</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode de clôture d'une session ssh. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode permet de clore la session ssh ouverte la connexion ssh à l'hôte. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9ddca7d0030d78cdf88de932a817ece"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::waitsocket </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LIBSSH2_SESSION *&#160;</td>
+          <td class="paramname"><em>session</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="ab108ac73fbac5826251a79f058532a2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::byteCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00195">195</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c18038274554b389a8c8db5aa9259f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LIBSSH2_CHANNEL* wrapperSsh::wrapperSsh::channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00202">202</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bccdf7ba714f56f4c0ffff126e0405e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::exitCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00193">193</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ab701724987331d4954c3dcfa58ec0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* wrapperSsh::wrapperSsh::exitSignal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00194">194</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a19e47dac18658f6aebda1cf87eb697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* wrapperSsh::wrapperSsh::fingerPrint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00190">190</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af32ad09c3b1f64891098ecbb301231fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrapperSsh::wrapperSsh::host</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nom dns ou adresse ip de l'hôte auquel on veut se connecter. </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00184">184</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad849d39b9bae2f3889a6d85ba7df70e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long wrapperSsh::wrapperSsh::hostAddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nom dns ou adresse ip de l'hôte auquel on veut se connecter mais au format binaire. </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00186">186</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83b10bfd4f4ac8656deaa8544931ec8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t wrapperSsh::wrapperSsh::len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00196">196</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea87cfa58cd5fca826c509dcfad88765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LIBSSH2_KNOWNHOSTS* wrapperSsh::wrapperSsh::nh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00200">200</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a6f1c93c16e7b79510b64b962f25aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::returnCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Utilisé un peu partout comme élément retourné par les différentes fonctions et méthodes. </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00192">192</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf84f52ea2aec650279c9df5873c812d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LIBSSH2_SESSION* wrapperSsh::wrapperSsh::session</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00201">201</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a355b299ef90281215ec988f81492a645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct sockaddr_in wrapperSsh::wrapperSsh::sin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00189">189</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3857c3e91235bb0ae49afef1d240ebb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::sock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Socket se connectant au port 22 du serveur </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00188">188</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac59436526bdf75d81c638a4624a9ce14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wrapperSsh::wrapperSsh::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00197">197</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9eb30eae461cdaff310bb254a25a61c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrapperSsh::wrapperSsh::userAuthList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Va contenir la liste des méthodes d'indentification. </p>
+
+<p>Définition à la ligne <a class="el" href="WrapperSsh_8h_source.html#l00199">199</a> du fichier <a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="WrapperSsh_8h_source.html">WrapperSsh.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacewrapperSsh.html">wrapperSsh</a></li><li class="navelem"><a class="el" href="classwrapperSsh_1_1wrapperSsh.html">wrapperSsh</a></li>
+    <li class="footer">Généré le Vendredi Août 9 2013 16:26:59 pour SshToolkit par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3 </li>
+  </ul>
+</div>
+</body>
+</html>

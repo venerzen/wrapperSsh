@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3"/>
+<title>SshToolkit: Référence de la classe sshException</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SshToolkit
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classsshException.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="classsshException-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe sshException</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exceptions liées au CtrlSsh.  
+ <a href="classsshException.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CtrlSshException_8h_source.html">CtrlSshException.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de sshException:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classsshException.png" usemap="#sshException_map" alt=""/>
+  <map id="sshException_map" name="sshException_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a301d405958a27226ad2a564f67c1b957"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#a301d405958a27226ad2a564f67c1b957">sshException</a> (int n=0, const std::string &amp;e=&quot;&quot;)  throw ()</td></tr>
+<tr class="memdesc:a301d405958a27226ad2a564f67c1b957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe.  <a href="#a301d405958a27226ad2a564f67c1b957"></a><br/></td></tr>
+<tr class="separator:a301d405958a27226ad2a564f67c1b957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0274752843cc20403f3864d4142772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#aac0274752843cc20403f3864d4142772">~sshException</a> ()  throw ()</td></tr>
+<tr class="memdesc:aac0274752843cc20403f3864d4142772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur par défaut.  <a href="#aac0274752843cc20403f3864d4142772"></a><br/></td></tr>
+<tr class="separator:aac0274752843cc20403f3864d4142772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77db05ac6fa582baef8172f206da323a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#a77db05ac6fa582baef8172f206da323a">sshException</a> (const <a class="el" href="classsshException.html">sshException</a> &amp;c)</td></tr>
+<tr class="memdesc:a77db05ac6fa582baef8172f206da323a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de copie de la classe.  <a href="#a77db05ac6fa582baef8172f206da323a"></a><br/></td></tr>
+<tr class="separator:a77db05ac6fa582baef8172f206da323a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab218af306691fe51e6332499f29837"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#a2ab218af306691fe51e6332499f29837">what</a> () const   throw ()</td></tr>
+<tr class="memdesc:a2ab218af306691fe51e6332499f29837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode d'affichage de l'erreur.  <a href="#a2ab218af306691fe51e6332499f29837"></a><br/></td></tr>
+<tr class="separator:a2ab218af306691fe51e6332499f29837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a6809da215a6a05b085c13e99d37fd5f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#a6809da215a6a05b085c13e99d37fd5f7">number</a></td></tr>
+<tr class="separator:a6809da215a6a05b085c13e99d37fd5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9b3ba01fad2e6ccc85a420bd663010"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsshException.html#a0b9b3ba01fad2e6ccc85a420bd663010">error</a></td></tr>
+<tr class="separator:a0b9b3ba01fad2e6ccc85a420bd663010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Exceptions liées au CtrlSsh. </p>
+<pre class="fragment">  Cette est une simple spécification de la classe std::exception. Elle permet de gérer des exceptions propre au CtrlSsh.
+</pre><dl class="section author"><dt>Auteur</dt><dd>(dernier à l'avoir modifié) </dd></dl>
+<dl class="section rcs"><dt>Author:</dt><dd>Kuhn Frédéric </dd></dl>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+<dl class="section rcs"><dt>Revision:</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd></dd></dl>
+<dl class="section rcs"><dt>Date:</dt><dd>2010/12/20 15:52:00 </dd></dl>
+<pre class="fragment">  Contact: fkuhn@plurimedia.fr
+
+  Created on: 2010/12/20 15:52:00</pre> 
+<p>Définition à la ligne <a class="el" href="CtrlSshException_8h_source.html#l00026">26</a> du fichier <a class="el" href="CtrlSshException_8h_source.html">CtrlSshException.h</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a301d405958a27226ad2a564f67c1b957"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sshException::sshException </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>e</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de la classe. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td><b>n</b> : code de l'erreur jetée. </td></tr>
+    <tr><td class="paramname">const</td><td>std::string&amp; <b>e</b> : message correspondant au code. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode est le constructeur de cette classe. C'est lui qui est directement appelé lors d'un « throw ». </p>
+
+</div>
+</div>
+<a class="anchor" id="aac0274752843cc20403f3864d4142772"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sshException::~sshException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur par défaut. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode est le destructeur par défaut de cette classe. </p>
+
+</div>
+</div>
+<a class="anchor" id="a77db05ac6fa582baef8172f206da323a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sshException::sshException </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsshException.html">sshException</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de copie de la classe. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">const</td><td><a class="el" href="classsshException.html" title="Exceptions liées au CtrlSsh.">sshException</a>&amp; <b>c</b> : Exception dont on va copier les paramètres. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void</dd></dl>
+<p>Cette méthode est le constructeur de copie de cette classe. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a2ab218af306691fe51e6332499f29837"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* sshException::what </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode d'affichage de l'erreur. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>char* : message formaté.</dd></dl>
+<p>Cette méthode retourne le texte descriptif de l'erreur. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a0b9b3ba01fad2e6ccc85a420bd663010"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sshException::error</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description de l'erreur retournée. </p>
+
+<p>Définition à la ligne <a class="el" href="CtrlSshException_8h_source.html#l00072">72</a> du fichier <a class="el" href="CtrlSshException_8h_source.html">CtrlSshException.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6809da215a6a05b085c13e99d37fd5f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sshException::number</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Cette variable correspond au code de l'erreur. Celle-ci peut à l'heure actuelle prendre pour valeur :</p>
+<ul>
+<li>1 : description du type de l'erreur. </li>
+</ul>
+
+<p>Définition à la ligne <a class="el" href="CtrlSshException_8h_source.html#l00068">68</a> du fichier <a class="el" href="CtrlSshException_8h_source.html">CtrlSshException.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="CtrlSshException_8h_source.html">CtrlSshException.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classsshException.html">sshException</a></li>
+    <li class="footer">Généré le Vendredi Août 9 2013 16:26:59 pour SshToolkit par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3 </li>
+  </ul>
+</div>
+</body>
+</html>
