@@ -10,6 +10,7 @@ SET( SRCS
 	./libs/CtrlSshException.cpp
 	./libs/WrapperSsh.cpp
 	./libs/WrapperSshException.cpp
+	./libs/string.cpp
 )
 #	Patch pour pouvoir compiler sous osx avec la libssh2
 set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} /opt/local/lib /usr/local/lib)

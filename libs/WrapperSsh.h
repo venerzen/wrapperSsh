@@ -4,7 +4,6 @@
 #include <fstream>
 #include <string>
 #include <cstring>		// wtf !?
-#include "WrapperSshException.h"
 #include <libssh2.h>
 #ifdef HAVE_WINSOCK2_H
 #include <winsock2.h>
@@ -22,6 +21,9 @@
 #include <errno.h>
 #include <stdio.h>
 #include <ctype.h>
+#include "string.h"
+#include "WrapperSshException.h"
+#include <algorithm>    // std::find
 
 
 /**
@@ -63,6 +65,7 @@ namespace	wrapperSsh	{
 	};
 	class	wrapperSsh	{
 		public:
+			static	std::string	setPassword(std::string passwd);
 				/*!
 				*	\brief  Constructeur par défaut. 
 				*	\return void
@@ -209,6 +212,7 @@ namespace	wrapperSsh	{
 			void	portDisConnect()	throw(wrapperSshException);		// permet de clore la connection
 			void	setUserAuthList(const std::string& user)	throw(wrapperSshException);
 			int	waitsocket(int socket_fd, LIBSSH2_SESSION *session);
+			static	void kbd_callback( const char *name, int name_len, const char *instruction, int instruction_len, int num_prompts, const LIBSSH2_USERAUTH_KBDINT_PROMPT *prompts, LIBSSH2_USERAUTH_KBDINT_RESPONSE *responses, void **abstract);
 			
 	};
 }

@@ -1,6 +1,19 @@
 #include "WrapperSsh.h"
-
 namespace	wrapperSsh	{
+void wrapperSsh::kbd_callback( const char *name, int name_len, const char *instruction, int instruction_len, int num_prompts, const LIBSSH2_USERAUTH_KBDINT_PROMPT *prompts, LIBSSH2_USERAUTH_KBDINT_RESPONSE *responses, void **abstract)	{
+	std::string password	= "null";
+	password	= wrapperSsh::setPassword(password);
+    (void)name;
+    (void)name_len;
+    (void)instruction;
+    (void)instruction_len;
+    if (num_prompts == 1) {
+        responses[0].text	= strdup(password.c_str());
+        responses[0].length	= strlen(password.c_str());
+	}
+    (void)prompts;
+    (void)abstract;
+} /* kbd_callback */ 
 	/*	--------------------------------------------------
 		Partie concernant les constructeurs
 	--------------------------------------------------	*/
@@ -65,8 +78,14 @@ namespace	wrapperSsh	{
 		this->portDisConnect();
 		this->sshDisconnect();
 	}
+	std::string	wrapperSsh::setPassword(std::string passwd)	{
+		static  std::string password;
+		if(password.empty())    {   
+			password    = passwd;
+		}   
+		return  password;
+	}
 	void	wrapperSsh::sshConnect(const std::string& user, const std::string& password)	throw(wrapperSshException)	{
-		size_t	found;	// Va permettre de savoir si on a la possibilité de se connecter via la mot de passe
 				//	ouverture de la session
 		this->session	= libssh2_session_init();	// on ouvre une session ssh
 		if(!this->session)	throw	wrapperSshException(2,"Failed to initiate ssh session " + this->host);
@@ -74,18 +93,34 @@ namespace	wrapperSsh	{
 		if (this->returnCode) throw	wrapperSshException(3,"Failure establishing SSH session" + this->host);
 				//	récupération des types de connections possible 
 		this->setUserAuthList(user);
-				//	et on teste le fait de pouvoir se connecter via un mot de passe
-		found	= this->userAuthList.find("password");
-		if(found == std::string::npos)	throw	wrapperSshException(4,"Authentification method not allowed." + this->host);
-				//	ensuite on tente une connection
-		if ( password.length() != 0 ) {
-			while ((this->returnCode = libssh2_userauth_password(this->session, user.c_str(), password.c_str())) == LIBSSH2_ERROR_EAGAIN) ;
-			if (this->returnCode) 	throw	wrapperSshException(5,"Authentification by password failed on : " + this->host);
+				//	et on choisi le mode de connexion utilisé
+		char	delim	= ',';
+		std::vector<std::string> elems	= string::split(this->userAuthList,delim);
+		if(std::find(elems.begin(), elems.end(), "password") != elems.end()) {								//	password connexion
+			if ( password.length() != 0 ) {
+				while ((this->returnCode = libssh2_userauth_password(this->session, user.c_str(), password.c_str())) == LIBSSH2_ERROR_EAGAIN) ;
+				if (this->returnCode) 	throw	wrapperSshException(5,"Authentification by password failed on : " + this->host);
+			}
+			else	throw	wrapperSshException(6,"Authentification password is required." + this->host);
+		}	else	if(std::find(elems.begin(), elems.end(), "keyboard-interactive") != elems.end()) {		//	keyboord-interactive
+			std::string tmp = 	wrapperSsh::setPassword(password);	// c'est crade, mais ça fonctionne…
+				if (libssh2_userauth_keyboard_interactive(this->session, user.c_str(), &kbd_callback) ) {
+					std::cerr << "\tAuthentication by keyboard-interactive failed!\n" << std::endl;
+					throw	wrapperSshException(4,"Authentification method not allowed." + this->host);
+				} 
+		}	else	if(std::find(elems.begin(), elems.end(), "publickey") != elems.end()) {					// publickey
+			std::cout << "je m'y connecte via une autentification par « publickey »" << std::endl;
+			throw	wrapperSshException(4,"Authentification method not allowed." + this->host);
+		}	else	{
+			std::cout << "Mode connexion non pris en charge " << std::endl;
+			std::cout << "« elems » contains :" << std::endl;
+			for (unsigned i=0; i<elems.size(); i++)	std::cout << "\t" << elems.at(i) << std::endl;
+			throw	wrapperSshException(4,"Authentification method not allowed." + this->host);
 		}
-		else	throw	wrapperSshException(6,"Authentification password is required." + this->host);
+		
 			//	ajout des infos complémentaires en cas d'erreur
 		//libssh2_trace(this->session,LIBSSH2_TRACE_ERROR);
-				//	on passe en non bloquant
+			//	on passe en non bloquant
 	
 	}
 	void	wrapperSsh::sshDisconnect()	throw(wrapperSshException)	{

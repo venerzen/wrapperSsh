@@ -47,6 +47,8 @@ int	main (int argc, char* argv[])	{
 			delete(objCtrlSsh);
 			std::cout << commandResult.result << std::endl;
 		}
+	}	catch(const wrapperSshException& e)	{
+			std::cout << "Je suis dans ce cas" << std::endl;
 	}	catch(...)	{
 		rc	= EXIT_FAILURE;
 		std::cerr << "Something failed…" << std::endl;
